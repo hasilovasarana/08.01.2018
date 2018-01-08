@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bookStoreDataModelStoreContainer" CdmEntityContainer="bookStoreDataEntities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="bookStoreDataModel.Author">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="author_name" ColumnName="author_name" />
+          <ScalarProperty Name="author_info" ColumnName="author_info" />
+          <ScalarProperty Name="author_photo" ColumnName="author_photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="bookStoreDataModel.Book">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="book_name" ColumnName="book_name" />
+          <ScalarProperty Name="book_author" ColumnName="book_author" />
+          <ScalarProperty Name="book_isbn" ColumnName="book_isbn" />
+          <ScalarProperty Name="book_category" ColumnName="book_category" />
+          <ScalarProperty Name="book_lang" ColumnName="book_lang" />
+          <ScalarProperty Name="book_price" ColumnName="book_price" />
+          <ScalarProperty Name="book_amount" ColumnName="book_amount" />
+          <ScalarProperty Name="book_info" ColumnName="book_info" />
+          <ScalarProperty Name="book_publish_date" ColumnName="book_publish_date" />
+          <ScalarProperty Name="book_add_date" ColumnName="book_add_date" />
+          <ScalarProperty Name="book_publisher" ColumnName="book_publisher" />
+          <ScalarProperty Name="book_type" ColumnName="book_type" />
+          <ScalarProperty Name="book_photo" ColumnName="book_photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookTypes">
+      <EntityTypeMapping TypeName="bookStoreDataModel.BookType">
+        <MappingFragment StoreEntitySet="BookTypes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="book_type_name" ColumnName="book_type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="bookStoreDataModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="category_name" ColumnName="category_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="bookStoreDataModel.Language">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="lang_name" ColumnName="lang_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publishers">
+      <EntityTypeMapping TypeName="bookStoreDataModel.Publisher">
+        <MappingFragment StoreEntitySet="Publishers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="publisher_name" ColumnName="publisher_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
